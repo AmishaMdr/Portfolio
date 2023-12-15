@@ -9,7 +9,8 @@
 	<title>Amisha Madarie</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -19,27 +20,45 @@
 			<a href="../index.html"><img src="../images/logo.svg" alt="Logo"></a>
 			<ul>
 				<li><a href="../index.html">Home</a></li>
-				<li><a href="index.html#project">Mijn projecten</a></li>
-				<li><a href="../overmij.html">Over mij</a></li>
+				<li><a href="../index.html">Mijn projecten</a></li>
+				<li><a href="../overmij.html">Over mij</a></li> 
 				<li><a href="../cv.pdf" target="_blank">Mijn CV</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</section>
+
+		<section class="menu2">
+			<a href="../index.html"><img src="../images/logo.svg" alt="Logo"></a>
+			<ul id="myLinks">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="#project">Mijn projecten</a></li>
+				<li><a href="../overmij.html">Over mij</a></li> 
+				<li><a href="../cv.pdf" target="_blank">Mijn CV</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</section>
 	</header>
 
 	<main>
-        <h1>TalenOveral Ontwerp</h1>
+        <h1 id="titel">TalenOveral Ontwerp</h1>
 	</main>
 
 	<footer>
+		<h3 id="contact">Contact</h3>
 		<ul>
 			<li>
-				<img src="#" alt="Gmail Icon">
+				<img src="../images/mailicon.svg" alt="Gmail Icon">
 				<p>amishamadarie10@gmail.com</p>
 			</li>
 			<li>
-				<img src="#" alt="Linkedin Icon">
+				<img src="../images/linkedinicon.svg" alt="Linkedin Icon">
 				<p>Amisha Madarie</p>
+			</li>
+			<li>
+				<p id="cr">© 2023 Amisha Madarie</p>
 			</li>
 		</ul>
 	</footer>

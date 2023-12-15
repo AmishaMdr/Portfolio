@@ -9,7 +9,8 @@
 	<title>Amisha Madarie</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -19,28 +20,92 @@
 			<a href="../index.html"><img src="../images/logo.svg" alt="Logo"></a>
 			<ul>
 				<li><a href="../index.html">Home</a></li>
-				<li><a href="index.html#project">Mijn projecten</a></li>
+				<li><a href="../index.html">Mijn projecten</a></li>
 				<li><a href="../overmij.html">Over mij</a></li> 
 				<li><a href="../cv.pdf" target="_blank">Mijn CV</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</section>
+
+		<section class="menu2">
+			<a href="../index.html"><img src="../images/logo.svg" alt="Logo"></a>
+			<ul id="myLinks">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="#project">Mijn projecten</a></li>
+				<li><a href="../overmij.html">Over mij</a></li> 
+				<li><a href="../cv.pdf" target="_blank">Mijn CV</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</section>
 	</header>
 
 	<main>
-		<h1>Over mij</h1>
+		<h1 id="titel">Over mij</h1>
+
+		<section class="overmij">
+			<article id="ikben">
+				<section class="tekst">
+				<h2>Wie ben ik?</h2>
+				<p>Ik ben Amisha Madarie, een student aan de Hogeschool van Amsterdam. 
+					Ik volg de opleiding Communication and Multimedia Design (CMD), een brede, creatieve en technische opleiding waarin ik ontzettend veel leer.</p>
+				<p>Na mijn middelbare school wist ik niet wat ik wilde doen. 
+					Ik nam een tussenjaar en werkte in de horeca.
+					 Daar begon ik logo's, posters, menu's en meer op te merken. 
+					 Het leek me geweldig om dat zelf te kunnen ontwerpen. 
+					 Problemen oplossen voor mensen via het creatieve proces sprak me aan, en daarom koos ik voor deze opleiding.</p>
+				<p>Mijn sterkste punt is mijn inlevingsvermogen, waardoor ik problemen beter kan zien die opgelost moeten worden. 
+					Mijn zwakste punt is dat ik een controlfreak ben, waardoor ik alles graag zelf wil doen. 
+					Ik heb daarop gereflecteerd en weet nu hoe ik moet compenseren en dingen los kan laten.</p>
+				<p>Vragen of samenwerken? Stuur me gerust een berichtje.</p>
+				<a href="#contact">Neem contact op met mij</a></p>
+				</section>
+				
+				<img src="../images/portret.jpg" alt="Foto van Amisha" id="portret">
+	 		</article>
+
+			<article id="skills">
+				<h2>Vaardigheden en tools</h2>
+				<p>Tijdens de studie CMD hebben we veel verschillende dingen geleerd, maar het belangrijkste is ontwerpen voor een gebruiker. 
+					We hebben zowel vaardigheden voor de visuele als de technische kant van ontwerpen geleerd, zodat we een goede basis hebben.</p>
+
+				<h4>Visueel</h4>
+					<ul>
+					  <li>Adobe XD</li>
+					  <li>Adobe Illustrator</li>
+					  <li>Adobe Photoshop</li>
+					  <li>Miro</li>
+					  <li>Figma</li>
+					</ul>
+				<h4>Technisch</h4>
+					<ul>
+					  <li>HTML en CSS</li>
+					  <li>Javascript</li>
+					  <li>Arduino IDE</li>
+					</ul>
+
+				<p>In mijn projecten kun je zien hoe ik dit heb toegepast.</p>
+				<a href="index.html#project">Bekijk projecten</a>
+			</article>
+		</section>
+
 	</main>
 
 	<footer>
 		<h3 id="contact">Contact</h3>
 		<ul>
 			<li>
-				<img src="#" alt="Gmail Icon">
+				<img src="../images/mailicon.svg" alt="Gmail Icon">
 				<p>amishamadarie10@gmail.com</p>
 			</li>
 			<li>
-				<img src="#" alt="Linkedin Icon">
+				<img src="../images/linkedinicon.svg" alt="Linkedin Icon">
 				<p>Amisha Madarie</p>
+			</li>
+			<li>
+				<p id="cr">© 2023 Amisha Madarie</p>
 			</li>
 		</ul>
 	</footer>
