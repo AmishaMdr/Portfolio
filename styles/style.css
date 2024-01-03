@@ -245,13 +245,13 @@ footer ul {
 	padding: 0;
 }
 
-.overmij, .team {
+.overmij, .team, .taal{
 	background-color: var(--color-background);
 	padding: 1em;
 	border-radius: .5em;
 }
 
-.overmij p, .overmij li, .team p{
+.overmij p, .overmij li, .team p, .taal p{
 	font-size: 1.2em;
 	max-width: 700px;
 }
@@ -429,8 +429,42 @@ footer ul {
 		padding: 2em 2em 2em 4em;
 	}
 
-	.team{
+	.team, .taal{
 		padding: 2em 4em 2em 4em;
+	}
+
+	.taal img{
+		max-width: 100%;
+	}
+
+	#proces{
+		max-width: 50%;
+	}
+
+	.talenproces{
+		display: flex;
+	}
+
+	.talenproces p{
+		max-width: 45%;
+		margin-right: 5%;
+	}
+
+	.proto{
+		display: flex;
+	}
+
+	#proto1{
+		width: 40%;
+		margin-right: 3%;
+	}
+
+	#proto2{
+		width: 60%;
+	}
+
+	.eindresultaat img{
+		margin-bottom: 2em;
 	}
 	
 }
