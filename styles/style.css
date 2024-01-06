@@ -17,6 +17,7 @@
 	--color-text2: #eee;
 	--color-background:#FFF;
 	--color-button: #F1C50E;
+	/* --color-footer: #7a9c81; */
 	--color-footer: #99A49B;
 	--color-body: #eee;
 	--color-body2: #CBDAD1;
@@ -60,6 +61,11 @@ header img{
 	display: block;
 	font-size: 1.2em;
 }
+
+.menu a:hover{
+	color: var(--color-button);
+	transition: .3s;
+  }
 
 header {
 	height: 2.9em;
@@ -142,6 +148,22 @@ header {
 	font-size: 1.2em;
 }
 
+.banner a:nth-of-type(2){
+	margin-left: .5em;
+}
+
+.banner a, .projecten a{
+	background-color: var(--color-button);
+	border-radius: .5em;
+	color: var(--color-text);
+	transition: .3s;
+  }
+  
+.banner a:hover, .projecten a:hover {
+	box-shadow: 8px 8px #f8e48d;
+	transition: .3s;
+  }
+
 .vid video {
 	max-width: 100%;
 	height: auto;
@@ -164,7 +186,7 @@ header {
 .projecten {
     display: flex;
     flex-wrap: wrap; /* Zorgt ervoor dat de artikelen naar de volgende regel gaan als er niet genoeg ruimte is */
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 #project {
@@ -174,7 +196,7 @@ header {
 
 .talenoveral, .samenbloei{
 	background-color: var(--color-background);
-	margin: 1em 0em 3em 0em;
+	margin: 1em 0em 6em 0em;
 	border-radius: .5em;
 }
 
@@ -184,6 +206,7 @@ header {
 
 .talenoveral h3, .samenbloei h3 {
 	font-size: 1.5em;
+	padding-top: 1em;
 }
 
 .talenoveral p, .samenbloei p {
@@ -227,7 +250,7 @@ footer p {
 #cr {
 	color: var(--color-text2);
 	font-size: 1em;
-	padding-left: 4em;
+	padding-left: 5em;
 	margin-bottom: 4em;
 }
 
@@ -241,10 +264,21 @@ footer li {
 	list-style: none;
 	display: flex;
     align-items: center; 
+	/* border-bottom: dotted 3px;
+	color: #F1C50E; */
 }
 
 footer ul {
 	padding: 0;
+}
+
+footer a{
+	text-decoration: none;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: .5em;
+	font-size: 1.3em;
+	color: var(--color-text);
 }
 
 .overmij, .team, .taal{
