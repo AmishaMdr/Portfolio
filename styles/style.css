@@ -22,6 +22,7 @@
 	--color-body: #eee;
 	--color-body2: #CBDAD1;
 	--color-header: #2A626F;
+	--color-nav:  #333;
 }
 
 /* Code algemeen */
@@ -78,7 +79,7 @@ header {
 
 .menu2 {
 	overflow: hidden;
-	background-color: #333;
+	background-color: var(--color-nav);
 	position: fixed;
 	width: 100%;
   }
@@ -111,11 +112,15 @@ header {
 	top: 0;
 	padding: 14px 16px;
   }
-  
 /* Einde code header */
   
 
 /* Start code main */
+#titel {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: var(--color-nav);
+}
+
 .banner {
 	background-color: var(--color-body);
 	padding-bottom: .5em;
@@ -322,6 +327,17 @@ footer a{
 	display: flex;
   }
 
+/* Media-query voor schermen kleiner dan 700px */
+@media only screen and (max-width: 340px) {
+	.banner a {
+		margin: 1em 0 0 0;
+		display: flex;
+	}
+
+	#project {
+		margin-top: 2em;
+	}
+}
 
 /* Media-query voor schermen kleiner dan 700px */
 @media only screen and (max-width: 700px) {
@@ -412,6 +428,7 @@ footer a{
 
 	#titel {
 		margin-top: 2.5em;
+		margin-bottom: 1.5em;
 	}
 	
 	.projecten, .about, .samen, .talen {
@@ -428,6 +445,14 @@ footer a{
 
 	.overmij img {
 		margin-left: 12em;
+	}
+
+	.tekst p {
+		min-width: 18em;
+	}
+
+	#portret {
+		margin-left: 4em;
 	}
 
 }
@@ -460,6 +485,7 @@ footer a{
 	.overmij img {
 		margin: 2em 2em 2em 9em;
 	}
+
 	
 	#ikben, #skills{
 		padding: 2em 2em 2em 4em;
